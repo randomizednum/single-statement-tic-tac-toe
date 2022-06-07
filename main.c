@@ -6,14 +6,14 @@ int main(void* _, void* __, short *board, short *player, short *inp) {
 		(*player >= 11) ? 0 : (
 			(*player >= 2) ? //This means that we're printing the board (the player variable is the print + 2)
 				printf("%c%s", (board[*player - 2] == 2) ? 'O' : ((board[*player - 2] == 1) ? 'X' : ' '), (((*player - 1) % 3 == 0) ? "\n" : "")),
-				_main(board, (*inp = *player + 1, inp) /*inp can be used as storage*/, inp),
+				main(666, 666, board, (*inp = *player + 1, inp) /*inp can be used as storage*/, inp),
 				0
 			: ( //Regular player value, as a turn
 				board[scanf("%d", inp), *inp - 1] = *player + 1, //player is either 0 or 1
 
-				_main(board, (*inp = 2, inp), inp),
+				main(666,666, board, (*inp = 2, inp), inp),
 				*player = !(*player),
-				_main(board, player, inp),
+				main(666, 666, board, player, inp),
 				0
 			)
 		),
