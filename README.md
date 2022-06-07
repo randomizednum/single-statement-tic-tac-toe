@@ -5,3 +5,5 @@ Tic tac toe with:
 * A single function
 * A single statement in the function body
 * No global variables
+
+Note: Winning-losing hasn't been implemented
