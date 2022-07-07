@@ -2,8 +2,8 @@
 
 Tic tac toe with:
 
-* A single function
-* A single statement in the function body
+* A single statement
 * No global variables
+* No functions except main
 
 Note: Winning-losing hasn't been implemented
