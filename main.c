@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void* _, void* __, short *board, short *player, short *inp) {
+int main(void *_, void *__, short *board, short *player, short *inp) {
 	(_ == 666 && __ == 666) ? (
 		(*player >= 11) ? 0 : (
 			(*player >= 2) ? //This means that we're printing the board (the player variable is the print + 2)
